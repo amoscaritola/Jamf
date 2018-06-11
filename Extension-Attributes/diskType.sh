@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##########################################################################################################
-#   disktype.sh                                                                                          #
+#   diskType.sh                                                                                          #
 #   Extension attribute that will list the types of drives in the Mac as well as if Fusion is set up.    #
 #   https://github.com/amoscaritola                                                                      #
 #   March 15, 2018                                                                                       #
