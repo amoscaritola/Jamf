@@ -2,7 +2,7 @@
 
 ######################################################################################################
 #   setUserNameField.sh
-#   Uses the current signed in username and assigns it to the username field of that mac in the JSS
+#   Sets the username field in the JSS for the device with the username of the current logged in user
 #   https://github.com/amoscaritola
 #   03.14.2018
 #######################################################################################################
