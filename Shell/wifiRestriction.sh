@@ -24,11 +24,11 @@ if [ "$setValue" == "" ];then
   exit 1
 elif [ "$setValue" == "yes" ];then
   echo "Admin authorization now required to change network settings"
-  /usr/libexec/airportd prefs RequireAdminIBSS=YES RequireAdminNetworkChange=YES RequireAdminPowerToggle=YES;
+  /usr/libexec/airportd prefs RequireAdminIBSS=YES RequireAdminNetworkChange=YES RequireAdminPowerToggle=YES
   exit 0
 elif [ "$setValue" == "no" ];then
   echo "Admin authorization is no longer required to change network settings"
-  /usr/libexec/airportd prefs RequireAdminIBSS=NO RequireAdminNetworkChange=NO RequireAdminPowerToggle=NO;
+  /usr/libexec/airportd prefs RequireAdminIBSS=NO RequireAdminNetworkChange=NO RequireAdminPowerToggle=NO
   exit 0
 else
   echo "incorrect value set, please set value as yes or no only"
