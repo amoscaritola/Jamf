@@ -1,0 +1,16 @@
+<dict>
+<key>INVITATION_STRING</key>
+<string>$MOBILEDEVICEAPPINVITE</string>
+<key>JSS_ID</key>
+<string>$JSSID</string>
+<key>SERIAL_NUMBER</key>
+<string>$SERIALNUMBER</string>
+<key>DEVICE_NAME</key>
+<string>$DEVICENAME</string>
+<key>MAC_ADDRESS</key>
+<string>$MACADDRESS</string>
+<key>UDID</key>
+<string>$UDID</string>
+     <key>JSS_URL</key>
+     <string>https://your.jss.here:8443/</string>
+</dict> 
