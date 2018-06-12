@@ -8,8 +8,8 @@
 ################################################################################################################
 #
 #   Set parameter 4 in JSS:
-#   disable - limits access to admins only
-#   enable - allows standard users to make changes
+#   lock - limits access to admins only
+#   unlock - allows standard users to make changes
 #
 #   If you do not want to set the value in the JSS you can hardcode the value below.
 ################################################################################################################
@@ -22,17 +22,17 @@ setValue=${setValue:-$4}
 if [ "$setValue" == "" ];then
 	echo "Value is blank. Set value in parameter 4 of JSS or hardcode value in script."
 	exit 1
-elif [ "$setValue" == "enable" ];then
+elif [ "$setValue" == "unlock" ];then
 	echo "Allow standard users to change date/time"
 	security authorizationdb write system.preferences allow
 	security authorizationdb write system.preferences.datetime allow
   exit 0
-elif [ "$setValue" == "disable" ];then
+elif [ "$setValue" == "lock" ];then
 	echo "Removing standard user access to date/time"
 	security authorizationdb write system.preferences admin
 	security authorizationdb write system.preferences.datetime admin
   exit 0
 else
-	echo "set value as enable or disable only"
+	echo "set value as unlock or lock only"
 	exit 1
 fi
