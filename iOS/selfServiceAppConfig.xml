@@ -1,3 +1,4 @@
+<!--Add your jss URL to the selfService mobile app config -->
 <dict>
 <key>INVITATION_STRING</key>
 <string>$MOBILEDEVICEAPPINVITE</string>
@@ -13,4 +14,4 @@
 <string>$UDID</string>
      <key>JSS_URL</key>
      <string>https://your.jss.here:8443/</string>
-</dict> 
+</dict>
